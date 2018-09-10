@@ -1612,6 +1612,8 @@ chip</description>
 <part name="C22" library="netcat" deviceset="CAP" device="0402" value="100n"/>
 <part name="TP1" library="netcat" deviceset="TP" device="10R" value="CLK"/>
 <part name="TP2" library="netcat" deviceset="TP" device="10R" value="IO"/>
+<part name="R4" library="netcat" deviceset="RES" device="R0402" value="4.7k"/>
+<part name="U$2" library="netcat" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1731,9 +1733,9 @@ chip</description>
 <instance part="IC36" gate="GPIOA" x="-104.14" y="-25.4"/>
 <instance part="IC36" gate="GPIOB" x="-66.04" y="-15.24"/>
 <instance part="IC36" gate="GPIOD" x="-30.48" y="-81.28"/>
-<instance part="IC36" gate="PWR" x="-35.56" y="-30.48"/>
-<instance part="U$6" gate="G$1" x="-43.18" y="-30.48" rot="R180"/>
-<instance part="GND6" gate="GND" x="-38.1" y="-53.34"/>
+<instance part="IC36" gate="PWR" x="-20.32" y="-7.62"/>
+<instance part="U$6" gate="G$1" x="-27.94" y="-7.62" rot="R180"/>
+<instance part="GND6" gate="GND" x="-22.86" y="-30.48"/>
 <instance part="X1" gate="G$1" x="-172.72" y="-99.06" rot="MR0"/>
 <instance part="IC37" gate="G$1" x="-134.62" y="-96.52"/>
 <instance part="GND7" gate="GND" x="-134.62" y="-109.22"/>
@@ -1781,6 +1783,8 @@ chip</description>
 <instance part="C22" gate="G$1" x="-114.3" y="-101.6"/>
 <instance part="TP1" gate="G$1" x="-162.56" y="-40.64"/>
 <instance part="TP2" gate="G$1" x="-162.56" y="-43.18"/>
+<instance part="R4" gate="G$1" x="-30.48" y="-22.86" rot="R180"/>
+<instance part="U$2" gate="G$1" x="-38.1" y="-22.86" rot="R180"/>
 </instances>
 <busses>
 <bus name="BL_SDI,COL[0..7],FLASH_CS,I2C_SCL,I2C_SDA,ROW[0..4],SPI_MISO,SPI_MOSI,SPI_SCL,SR_CLK,SR_CLR,SR_D,SWD_CLK,SWD_IO,UART_RX,UART_TX,USB_DM,USB_DP">
@@ -1980,17 +1984,17 @@ chip</description>
 </segment>
 <segment>
 <pinref part="IC36" gate="PWR" pin="VSS"/>
-<wire x1="-35.56" y1="-33.02" x2="-38.1" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-33.02" x2="-38.1" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-10.16" x2="-22.86" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="-10.16" x2="-22.86" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="IC36" gate="PWR" pin="VSSA"/>
-<wire x1="-38.1" y1="-40.64" x2="-35.56" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="-17.78" x2="-20.32" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="GND" pin="GND"/>
-<wire x1="-38.1" y1="-50.8" x2="-38.1" y2="-48.26" width="0.1524" layer="91"/>
-<junction x="-38.1" y="-40.64"/>
+<wire x1="-22.86" y1="-27.94" x2="-22.86" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="-22.86" y="-17.78"/>
 <pinref part="IC36" gate="PWR" pin="BOOT0"/>
-<wire x1="-38.1" y1="-48.26" x2="-38.1" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="-48.26" x2="-38.1" y2="-48.26" width="0.1524" layer="91"/>
-<junction x="-38.1" y="-48.26"/>
+<wire x1="-22.86" y1="-25.4" x2="-22.86" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-25.4" x2="-22.86" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="-22.86" y="-25.4"/>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="GND"/>
@@ -2987,18 +2991,19 @@ chip</description>
 </net>
 <net name="VCC" class="0">
 <segment>
+<pinref part="U$2" gate="G$1" pin="VCC"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-35.56" y1="-22.86" x2="-38.1" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="IC36" gate="PWR" pin="VDD"/>
 <pinref part="U$6" gate="G$1" pin="VCC"/>
-<wire x1="-35.56" y1="-30.48" x2="-40.64" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-7.62" x2="-25.4" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="IC36" gate="PWR" pin="VDDA"/>
-<wire x1="-40.64" y1="-30.48" x2="-43.18" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="-38.1" x2="-40.64" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="-38.1" x2="-40.64" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="-40.64" y="-30.48"/>
-<pinref part="IC36" gate="PWR" pin="!RST"/>
-<wire x1="-35.56" y1="-45.72" x2="-40.64" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="-45.72" x2="-40.64" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="-40.64" y="-38.1"/>
+<wire x1="-25.4" y1="-7.62" x2="-27.94" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-15.24" x2="-25.4" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-15.24" x2="-25.4" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="-25.4" y="-7.62"/>
 </segment>
 <segment>
 <pinref part="U$7" gate="G$1" pin="VCC"/>
@@ -3394,6 +3399,13 @@ chip</description>
 <wire x1="-162.56" y1="-40.64" x2="-167.64" y2="-40.64" width="0.1524" layer="91"/>
 <label x="-167.64" y="-40.64" size="1.778" layer="95" rot="R180"/>
 <pinref part="TP1" gate="G$1" pin="TEST"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="IC36" gate="PWR" pin="!RST"/>
+<wire x1="-20.32" y1="-22.86" x2="-25.4" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
