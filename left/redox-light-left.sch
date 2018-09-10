@@ -753,35 +753,20 @@ chip</description>
 <wire x1="-0.4905" y1="0.381" x2="0.4905" y2="0.381" width="0.127" layer="51"/>
 <wire x1="-0.4905" y1="-0.381" x2="0.4905" y2="-0.381" width="0.127" layer="51"/>
 </package>
-<package name="1X03">
-<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.127" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.127" layer="21"/>
-<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.127" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.127" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.127" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
-<text x="-1.3462" y="1.8288" size="0.8128" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-2.667" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<package name="TP30R">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="3" dy="3" layer="1" roundness="100" cream="no"/>
+<text x="-1" y="2.05" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="-1" y="-3.54" size="0.8128" layer="37" font="vector">&gt;TP_SIGNAL_NAME</text>
+</package>
+<package name="TP06R">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="0.6" dy="0.6" layer="1" roundness="100" cream="no"/>
+<text x="-0.3" y="0.4001" size="0.8128" layer="25" font="vector">&gt;VALUE</text>
+</package>
+<package name="TP10R">
+<smd name="TP" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<text x="1" y="0" size="0.8128" layer="25" font="vector">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -974,19 +959,13 @@ chip</description>
 <wire x1="-5.08" y1="-6.35" x2="-3.81" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="-3.81" y1="-7.62" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="M03">
-<wire x1="3.81" y1="2.54" x2="10.16" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="6.35" y1="-5.08" x2="5.08" y2="-5.08" width="0.6096" layer="94"/>
-<wire x1="6.35" y1="-2.54" x2="5.08" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="6.35" y1="0" x2="5.08" y2="0" width="0.6096" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="2.54" x2="3.81" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="3.81" y2="-7.62" width="0.4064" layer="94"/>
-<text x="10.16" y="5.08" size="1.778" layer="96" rot="R180">&gt;VALUE</text>
-<text x="10.16" y="-8.382" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="2" x="0" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="3" x="0" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<symbol name="TESTPAD">
+<pin name="TEST" x="0" y="0" visible="off" length="point"/>
+<text x="2.54" y="0" size="1.27" layer="95">&gt;value</text>
+<wire x1="-1.27" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1414,18 +1393,30 @@ chip</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M03" prefix="X" uservalue="yes">
-<description>&lt;b&gt;Header 3&lt;/b&gt;
-Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115). Molex polarized connector foot print use with SKU : PRT-08232 with associated crimp pins and housings.</description>
+<deviceset name="TP" prefix="TP" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="M03" x="0" y="0"/>
+<gate name="G$1" symbol="TESTPAD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1X03">
+<device name="30R" package="TP30R">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="TEST" pad="TP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="06R" package="TP06R">
+<connects>
+<connect gate="G$1" pin="TEST" pad="TP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="10R" package="TP10R">
+<connects>
+<connect gate="G$1" pin="TEST" pad="TP"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1618,9 +1609,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="5V2" library="netcat" deviceset="5V" device=""/>
 <part name="5V4" library="netcat" deviceset="5V" device=""/>
 <part name="GND18" library="netcat" deviceset="GND" device=""/>
-<part name="X3" library="netcat" deviceset="M03" device=""/>
-<part name="GND14" library="netcat" deviceset="GND" device=""/>
 <part name="C22" library="netcat" deviceset="CAP" device="0402" value="100n"/>
+<part name="TP1" library="netcat" deviceset="TP" device="10R" value="CLK"/>
+<part name="TP2" library="netcat" deviceset="TP" device="10R" value="IO"/>
 </parts>
 <sheets>
 <sheet>
@@ -1787,9 +1778,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="VALUE" x="-165.1" y="-5.08" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND18" gate="GND" x="-111.76" y="-50.8"/>
-<instance part="X3" gate="G$1" x="-162.56" y="-38.1"/>
-<instance part="GND14" gate="GND" x="-165.1" y="-48.26"/>
 <instance part="C22" gate="G$1" x="-114.3" y="-101.6"/>
+<instance part="TP1" gate="G$1" x="-162.56" y="-40.64"/>
+<instance part="TP2" gate="G$1" x="-162.56" y="-43.18"/>
 </instances>
 <busses>
 <bus name="BL_SDI,COL[0..7],FLASH_CS,I2C_SCL,I2C_SDA,ROW[0..4],SPI_MISO,SPI_MOSI,SPI_SCL,SR_CLK,SR_CLR,SR_D,SWD_CLK,SWD_IO,UART_RX,UART_TX,USB_DM,USB_DP">
@@ -2116,15 +2107,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="GND18" gate="GND" pin="GND"/>
-<wire x1="-111.76" y1="-25.4" x2="-111.76" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="IC36" gate="GPIOA" pin="PA7"/>
-<wire x1="-109.22" y1="-25.4" x2="-111.76" y2="-25.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X3" gate="G$1" pin="1"/>
-<wire x1="-162.56" y1="-38.1" x2="-165.1" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="GND14" gate="GND" pin="GND"/>
-<wire x1="-165.1" y1="-38.1" x2="-165.1" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="-33.02" x2="-111.76" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="IC36" gate="GPIOA" pin="PA10"/>
+<wire x1="-109.22" y1="-33.02" x2="-111.76" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -3395,8 +3380,8 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <wire x1="-162.56" y1="-43.18" x2="-167.64" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="X3" gate="G$1" pin="3"/>
 <label x="-167.64" y="-43.18" size="1.778" layer="95" rot="R180"/>
+<pinref part="TP2" gate="G$1" pin="TEST"/>
 </segment>
 </net>
 <net name="SWD_CLK" class="0">
@@ -3407,8 +3392,8 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <wire x1="-162.56" y1="-40.64" x2="-167.64" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="X3" gate="G$1" pin="2"/>
 <label x="-167.64" y="-40.64" size="1.778" layer="95" rot="R180"/>
+<pinref part="TP1" gate="G$1" pin="TEST"/>
 </segment>
 </net>
 </nets>
