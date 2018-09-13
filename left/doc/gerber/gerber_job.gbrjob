@@ -1,0 +1,13 @@
+G04 Gerber job file.*
+%TF.FileFunction,JobInfo*%
+%TF.GenerationSoftware,Autodesk,EAGLE,9.1.3*%
+%TF.CreationDate,2018-09-13T16:40:24Z*%
+%TF.Part,Single*%
+%MOMM*%
+%TJ.B_Owner,Konstantin Frolov <k.frolov@innopolis.ru>*%
+%TJ.B_ID,redox-light-left*%
+%TJ.B_LayerNum,2*%
+%TJ.B_Thickness,0.270000*%
+%TJ.B_Size_X,161.000000*%
+%TJ.B_Size_Y,125.500000*%
+M02*
