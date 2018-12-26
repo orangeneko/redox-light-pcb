@@ -365,10 +365,10 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <wire x1="1.27" y1="-3.81" x2="-1.27" y2="-3.81" width="0.127" layer="51"/>
 </package>
 <package name="SOT89">
-<wire x1="2.3" y1="1.3" x2="2.3" y2="-1.3" width="0.2032" layer="21"/>
-<wire x1="2.3" y1="-1.3" x2="-2.3" y2="-1.3" width="0.2032" layer="21"/>
-<wire x1="-2.3" y1="-1.3" x2="-2.3" y2="1.3" width="0.2032" layer="21"/>
-<wire x1="-2.3" y1="1.3" x2="2.3" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="2.3" y1="1.3" x2="2.3" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="2.3" y1="-1.3" x2="-2.3" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="-2.3" y1="-1.3" x2="-2.3" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-2.3" y1="1.3" x2="2.3" y2="1.3" width="0.127" layer="51"/>
 <smd name="1" x="-1.5" y="-1.8" dx="0.58" dy="1.2" layer="1"/>
 <smd name="2" x="0" y="-1.8" dx="0.58" dy="1.2" layer="1"/>
 <smd name="3" x="1.5" y="-1.8" dx="0.58" dy="1.2" layer="1"/>
@@ -378,6 +378,10 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <rectangle x1="-1.74" y1="-2.23" x2="-1.26" y2="-1.27" layer="51"/>
 <rectangle x1="-0.24" y1="-2.23" x2="0.24" y2="-1.27" layer="51"/>
 <rectangle x1="1.26" y1="-2.23" x2="1.74" y2="-1.27" layer="51"/>
+<wire x1="-2.3" y1="1.3" x2="-1.3" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="1.3" x2="-2.3" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="1.3" y1="1.3" x2="2.3" y2="1.3" width="0.127" layer="21"/>
+<wire x1="2.3" y1="1.3" x2="2.3" y2="-1.3" width="0.127" layer="21"/>
 </package>
 <package name="SOT223">
 <wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.127" layer="21"/>
@@ -1110,9 +1114,9 @@ chip</description>
 </device>
 <device name="" package="SOT89">
 <connects>
-<connect gate="G$1" pin="GND" pad="1 4"/>
+<connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
